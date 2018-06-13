@@ -26,7 +26,6 @@ body,ul,li,figure{
 	padding: 0;
 /*	font-family: "PT Sans55";*/
 	font-family: 'PT Sans Narrow', sans-serif;
-letter-spacing: 0px;
 }
 a{
 	text-decoration: none;
@@ -40,6 +39,7 @@ body{
 	text-transform: uppercase;
 	font-weight: bold;
 	font-size: 14px;
+	letter-spacing: 0.1px;
 	line-height: 24px;
 }
 body.main{
@@ -56,7 +56,6 @@ h2,h3{
 	font-size: 30px;
 	line-height: 42px;
 	margin: 0;
-	margin-bottom: 35px;
 	padding: 0;
 }
 .container{
@@ -66,7 +65,7 @@ h2,h3{
 .main-header{
 	background: black;
 	height: 73px;
-	margin-bottom: 250px;
+	margin-bottom: 284px;
 }
 .main-navigation{
 	display: flex;
@@ -97,8 +96,11 @@ h2,h3{
 	position: absolute;
 	width: 371px;
 	height: 155px;
-	top: 100px;
+	top: 133px;
 	left: calc(50% - 185.5px);
+}
+.features{
+	margin-bottom: 78px;
 }
 .features-items{
 	display: flex;
@@ -107,7 +109,7 @@ h2,h3{
 .features-item{
 	width: 300px;
 	margin-right: 20px;
-	padding: 0 21px;
+	padding: 0 8px;
 	text-align: center;
 }
 .features-item:nth-last-child(1){
@@ -116,35 +118,48 @@ h2,h3{
 .features-item h3{
 	position: relative;
 }
+.features-item p{
+	margin: 0;
+	margin-top: 60px;
+}
 .features-item h3::after{
 	content: "";
 	position: absolute;
-	top: 40px;
-	left: calc(50% - 10px);
-	display: block;
-	width: 20px;
-	height: 20px;
+	    top: 54px;
+    left: calc(50% - 9px);
+    display: block;
+    width: 19.5px;
+    height: 19.5px;
 	background: white;
 	transform: rotate(45deg);
 }
 .row{
 	display: flex;
 	width: 100%;
+	background: url('../img/bg-block.jpg') repeat;
+	margin-bottom: 35px;
 }
 .row>section{
 	width: 50%;
-	padding-top: 50px;
-	background: url('../img/bg-block.jpg') repeat;
+	padding-top: 45px;
 	box-sizing: border-box;
 	position: relative;
 	height: 420px;
 	background: white;
 	color: black;
-	margin-top: 36px;
+}
+.row:last-child{
+	margin-bottom: 80px;
 }
 .news{
 	padding-left: 80px; 
 	width: 50%;
+}
+.news-list{
+	margin-top: 20px;
+}
+.news-item{
+	margin-bottom: 21px;
 }
 .news-item p{
 	font-size: 14px;
@@ -152,19 +167,32 @@ h2,h3{
 	line-height: 24px;
 	padding-right: 20px;
 }
+.news-item time{
+	display: block;
+	text-transform: none;
+}
 .gallery{
-	padding-left: 100px;
+	padding-left: 93px;
 	width: 50%;
 	box-shadow: black -110px 0 20px -114px; 
 }
 .gallery-content{
 	width: 286px;
 	height: 164px;
+	margin-left: 5px;
+    margin-top: 29px;
 }
 .news .button, 
 .gallery-navigation{
 	position: absolute;
-	bottom: 50px;
+	bottom: 51px;
+}
+.gallery-button{
+	margin-right: 15px;
+	text-transform: uppercase;
+}
+.gallery-button:last-child{
+	margin-right: 0;
 }
 .contacts{
 	padding-left: 80px; 
@@ -173,45 +201,59 @@ h2,h3{
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 24px;
+	margin: 19px 0;
 }
 .contacts .button{
-	margin-right: 20px;
+    margin-right: 19px;
+    margin-top: 5px;
 }
 .contacts .button:nth-last-child(1){
 	margin-right: 0;
 }
 .appointment{
 	width: 300px;
-	padding-left: 100px;
+    padding-left: 91px;
 	box-shadow: black -110px 0 20px -114px; 
 }
 .appointment-form{
 	width: 300px;
 }
+.appointment-item input[type="text"]::placeholder{
+	color: #4a4948;
+	padding-left: 15px;
+		
+}
+.appointment>p{
+	margin: 18px 0 0 0;
+}
 .appointment p{
 	width: 300px;
-	margin: 0;
+	margin-right: 20px;
+
 }
 .appointment-item{
 	display: inline-block;
+	margin: 0;
 }
 .appointment-item label{
-	margin-left: 10px;
 	margin-bottom: 5px;
-	display: block;
+	display: block;		
+	padding-left: 15px;
 }
 .appointment-item input{
 	width: 136px;
-	height: 39px;
+	height: 37px;
 	border: 2px solid black;
 }
 .appointment-row{
 	display: flex;
 	justify-content: space-between;
+	margin-top: 14px;
 }
 .appointment .button{
 	width: 100%;
-	margin-top: 20px;
+	margin-top: 17px;
+	text-transform: uppercase;
 }
 .main-footer{
 	color: white;
@@ -499,7 +541,7 @@ h2,h3{
 	line-height: 48px;
 	margin: 0;
 	margin-top: 49px;
-	padding: 0 187px;
+	padding: 0 186px;
 }
 .slogan::before,
 .slogan::after{
@@ -565,7 +607,7 @@ h2,h3{
 .about-us-collumn{
 	width: 50%;
 	box-sizing: border-box;
-	display: inline-block;
+	float: left;
 	font-size: 14px;
 	vertical-align: top;
 	margin: 0 0 80px 0;
