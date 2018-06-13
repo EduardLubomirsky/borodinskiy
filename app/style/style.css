@@ -458,12 +458,99 @@ h2,h3{
 	background: black;
 	transform: rotate(45deg);
 }
-
-
-
-
-
-
+.about-us-wrapper{
+	display: flex;
+	flex-wrap: wrap;
+}
+.about-us-wrapper section{
+	width: 50%;
+	box-sizing: border-box;
+}
+.price{
+	padding-left: 10px;
+}
+.about-us-wrapper h3{
+	font-size: 24px;
+	line-height: 30px;
+	padding-right: 236px;
+	margin-bottom: 40px;
+	margin-top: 60px;
+}
+.slogan{
+	position: relative;
+	text-align: center;
+	font-size: 48px;
+	line-height: 48px;
+	margin: 0;
+	padding: 0 170px;
+}
+.slogan::before,
+.slogan::after{
+	content: "";
+	position: absolute;
+	width: 160px;
+	height: 2px;
+	background: black;
+}
+.slogan::before{
+	left: 0;
+	top: calc(50% - 1px);
+}
+.slogan::after{
+	right: 0;
+	top: calc(50% - 1px);
+}
+.tools-item{
+	position: relative;
+	left: 33px;
+	line-height: 24px;
+	margin-bottom: 15px;
+}
+.tools-item::before{
+	content: "";
+	position: absolute;
+	top: calc(50% - 5px);
+	left: -30px;
+	width: 10px;
+	height: 10px;
+	background: black;
+	transform: rotate(45deg);
+}
+.price-table{
+	border: 2px solid black;
+	border-collapse: collapse;
+	width: 100%;
+}
+.price-table td{
+	border: 2px solid black;
+	height: 40px;
+}
+.price-cell{
+	text-align: center;
+	width: 50%;
+}
+.service-cell{
+	padding-left: 30px;
+}
+.about-us-wrapper .about-us{
+	font-size: 0px;
+	width: 100%;
+}
+.about-us h3{
+	font-size: 24px;
+}
+.about-us-collumn{
+	width: 50%;
+	box-sizing: border-box;
+	display: inline-block;
+	font-size: 14px;
+	vertical-align: top;
+	margin: 0 0 80px 0;
+	padding-right: 88px;
+}
+.about-us-collumn:last-child{
+	padding-left: 10px;
+}
 
 
 
