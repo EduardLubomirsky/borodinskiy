@@ -1,4 +1,4 @@
-@font-face {
+/*@font-face {
 	font-family: "PT Sans"; 
 	src: url("../fonts/ptsansnarrow.woff") format("truetype"); 
 	font-style: normal; 
@@ -9,7 +9,8 @@
 	src: url("../fonts/PTSans/PTN57F.ttf") format("truetype"); 
 	font-style: normal; 
 	font-weight: normal; 
-}
+}*/
+
 .visually-hidden {
 	position: absolute !important;
 	clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
@@ -23,7 +24,9 @@
 body,ul,li,figure{
 	margin: 0;
 	padding: 0;
-	font-family: "PT Sans55";
+/*	font-family: "PT Sans55";*/
+	font-family: 'PT Sans Narrow', sans-serif;
+letter-spacing: 0px;
 }
 a{
 	text-decoration: none;
@@ -43,11 +46,11 @@ body.main{
 	background: #070707 url('../img/index-bg.jpg') no-repeat;
 	background-size: contain;
 }
-body.shop{
-	background: url('../img/bg-block.jpg') repeat;
-}
 body:not(.main) .main-header{
 	margin: 0;
+}
+body:not(.main){
+background: url('../img/bg-block.jpg') repeat;
 }
 h2,h3{
 	font-size: 30px;
@@ -62,18 +65,17 @@ h2,h3{
 }
 .main-header{
 	background: black;
-	height: 72px;
+	height: 73px;
 	margin-bottom: 250px;
 }
 .main-navigation{
 	display: flex;
 	position: relative;
-	height: 72px;
 	justify-content: space-between;
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
-	padding: 0 30px;
+	padding: 0 20px;
 }
 .main-navigation ul{
 	display: flex;
@@ -281,11 +283,12 @@ h2,h3{
 .page-title{
 	font-size: 30px;
 	line-height: 42px;
-	margin-top: 55px;
+	margin: 0;
+	margin-top: 50px;
 }
 .breadcrumbs{
 	display: flex;
-	margin-top: 28px;
+	margin-top: 17px;
 }
 .breadcrumbs-item{
 	position: relative;
@@ -472,8 +475,8 @@ h2,h3{
 .about-us-wrapper h3{
 	font-size: 24px;
 	line-height: 30px;
-	padding-right: 236px;
-	margin-bottom: 40px;
+	padding-right: 231px;
+	margin-bottom: 34px;
 	margin-top: 60px;
 }
 .slogan{
@@ -482,7 +485,8 @@ h2,h3{
 	font-size: 48px;
 	line-height: 48px;
 	margin: 0;
-	padding: 0 170px;
+	margin-top: 49px;
+	padding: 0 187px;
 }
 .slogan::before,
 .slogan::after{
@@ -502,19 +506,23 @@ h2,h3{
 }
 .tools-item{
 	position: relative;
-	left: 33px;
+	top: -7px;
+	left: 21px;
 	line-height: 24px;
-	margin-bottom: 15px;
+	margin-bottom: 13px;
+}
+.tools-item:last-child{
+	margin-bottom: 0;
 }
 .tools-item::before{
-	content: "";
-	position: absolute;
-	top: calc(50% - 5px);
-	left: -30px;
-	width: 10px;
-	height: 10px;
-	background: black;
-	transform: rotate(45deg);
+    content: "";
+    position: absolute;
+    top: calc(50% - 4px);
+    left: -20px;
+    width: 8px;
+    height: 8px;
+    background: black;
+    transform: rotate(45deg);
 }
 .price-table{
 	border: 2px solid black;
@@ -523,14 +531,14 @@ h2,h3{
 }
 .price-table td{
 	border: 2px solid black;
-	height: 40px;
+	height: 37px;
 }
 .price-cell{
 	text-align: center;
 	width: 50%;
 }
 .service-cell{
-	padding-left: 30px;
+	padding-left: 17px;
 }
 .about-us-wrapper .about-us{
 	font-size: 0px;
@@ -538,6 +546,8 @@ h2,h3{
 }
 .about-us h3{
 	font-size: 24px;
+	margin-top: 52px;
+	margin-bottom: 27px;
 }
 .about-us-collumn{
 	width: 50%;
@@ -546,7 +556,7 @@ h2,h3{
 	font-size: 14px;
 	vertical-align: top;
 	margin: 0 0 80px 0;
-	padding-right: 88px;
+	padding-right: 75px;
 }
 .about-us-collumn:last-child{
 	padding-left: 10px;
