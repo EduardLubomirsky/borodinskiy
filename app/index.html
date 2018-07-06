@@ -9,22 +9,24 @@
 </head>
 <body class="main">
 	<header class="main-header">
-		<div class="container">
 			<nav class="main-navigation">
-				<a class="main-logo"><img src="img/main-logo.svg" alt=""></a>
-				<ul class="site-navigation">
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<ul class="user-navigation">
-					<li><a class="login-link" href="#">Вход</a></li>
-				</ul>	
+				<a class="main-header-logo"><img src="img/main-logo.svg" alt=""></a>
+				<div class="main-navigation-wrapper">
+					<div class="container">
+						<ul class="site-navigation">
+							<li><a href="#">Информация</a></li>
+							<li><a href="#">Новости</a></li>
+							<li><a href="price.html">Прайс-лист</a></li>
+							<li><a href="shop.html">Магазин</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+						<ul class="user-navigation">
+							<li><a class="login-link" href="login.html">Вход</a></li>
+						</ul>	
+					</div>
+				</div>
 
 			</nav>
-		</div>
 	</header>
 	<main class="container">
 		<section class="features">
@@ -135,20 +137,26 @@
 				<input class="login-form-item login" type="text" placeholder="Логин">
 				<input class="login-form-item password" type="password" placeholder="Пароль">
 				<p class="login-form-group">
-						<input class="login-form-item" type="checkbox" id="remember">
-						<label for="remember">Запомните меня</label>
+					<input class="login-form-item" type="checkbox" id="remember">
+					<label for="remember">Запомните меня</label>
 					<a href="" class="login-forgot-password">Я забыл пароль!</a>
 				</p>
 				<button class="button login-form-sing-in-btn" type="submit">Войти</button>
 			</form>
-			<button class="button login-form-close-btn modal-close" type="button">x</button>
+			<button class="button login-form-close-btn modal-close" type="button">
+				<span></span>
+				<span></span>
+			</button>
 		</section>
 	</div>
 	<div class="fixed-overlay-map">
 		<div class="modal modal-map-container">
 			<section class="modal-map" id="map">
 			</section>
-			<button class="button map-close-btn">x</button>
+			<button class="button map-close-btn modal-close">
+				<span></span>
+				<span></span>
+			</button>
 		</div>
 		
 	</div>

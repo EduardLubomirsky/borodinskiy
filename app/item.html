@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
@@ -7,24 +7,23 @@
 	<link rel="stylesheet" href="style/normalize.css">
 	<link rel="stylesheet" href="style/style.css">
 </head>
-<body>
+<body class="inner-page">
 	<header class="main-header">
-		<div class="container">
-			<nav class="main-navigation">
-				<ul class="site-navigation">
-					<li><a class="logo" href="index.html"><img src="img/logo.svg" alt=""></a></li>
-					<li><a href="#">Информация</a></li>
-					<li><a href="#">Новости</a></li>
-					<li><a href="price.html">Прайс-лист</a></li>
-					<li><a href="shop.html">Магазин</a></li>
-					<li><a href="#">Контакты</a></li>
-				</ul>
-				<ul class="user-navigation">
-					<li><a class="login-link" href="#">Вход</a></li>
-				</ul>	
-
-			</nav>
-		</div>
+		<nav class="main-navigation container">
+			<a class="main-header-logo" href="index.html">
+				<img src="img/logo.svg" width="111" height="24" alt="Логотип барбершопа «Бородинский»">
+			</a>
+			<ul class="site-navigation">
+				<li><a href="info.html">Информация</a></li>
+				<li><a href="news.html">Новости</a></li>
+				<li><a href="price.html">Прайс-лист</a></li>
+				<li class="site-navigation-current"><a href="shop.html">Магазин</a></li>
+				<li><a href="contacts.html">Контакты</a></li>
+			</ul>
+			<ul class="user-navigation">
+				<li><a class="login-link" href="login.html">Вход</a></li>
+			</ul>
+		</nav>
 	</header>
 	<main class="container">
 		<h1 class="page-title">Набор для путешествий «Baxter of California»</h1>
@@ -54,7 +53,7 @@
 					<a class="button" href="#">Купить</a>
 				</p>
 				<h3>В набор входят:</h3>
-				<ul class="include-items">
+				<ul class="list-style-1">
 					<li class="include-item">Средство для умывания (50 мл)</li>
 					<li class="include-item">Увлажняющий крем (50 мл)</li>
 					<li class="include-item">Крем для бритья (50 мл)</li>
@@ -80,6 +79,27 @@
 				<a class="button" href="https://htmlacademy.ru">HTML Academy</a>
 			</p>
 		</div>
-	</footer>  
+	</footer>
+	<div class="fixed-overlay-login">
+		<section class="modal modal-login">
+			<h2>Личный кабинет</h2>
+			<p>Введите пожалуйста свой логин и пароль.</p>
+			<form action="" class="login-form">
+				<input class="login-form-item login" type="text" placeholder="Логин">
+				<input class="login-form-item password" type="password" placeholder="Пароль">
+				<p class="login-form-group">
+					<input class="login-form-item" type="checkbox" id="remember">
+					<label for="remember">Запомните меня</label>
+					<a href="" class="login-forgot-password">Я забыл пароль!</a>
+				</p>
+				<button class="button login-form-sing-in-btn" type="submit">Войти</button>
+			</form>
+			<button class="button login-form-close-btn modal-close" type="button">
+				<span></span>
+				<span></span>
+			</button>
+		</section>
+	</div>
+	<script type="text/javascript" src="js/common.js"></script>
 </body>
 </html>
