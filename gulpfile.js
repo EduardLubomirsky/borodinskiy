@@ -19,4 +19,3 @@ gulp.task('watch', ['browser-sync'], function() {
 
 gulp.task('default', ['watch'], function () {
 
-});

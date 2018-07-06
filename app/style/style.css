@@ -64,7 +64,6 @@ h2,h3{
 }
 .main-header{
 	background: black;
-	height: 73px;
 	margin-bottom: 284px;
 }
 .main-navigation{
@@ -74,11 +73,11 @@ h2,h3{
 	font-size: 16px;
 	font-weight: bold;
 	line-height: 20px;
-	padding: 0 20px;
+	padding: 0 10px;
 }
 .main-navigation ul{
 	display: flex;
-	height: 73px;
+	flex-wrap: wrap;
 }
 .site-navigation li{
 	line-height: 72px;
@@ -108,7 +107,7 @@ h2,h3{
 	position: absolute;
 	width: 371px;
 	height: 155px;
-	top: 133px;
+	bottom: -200px;
 	left: calc(50% - 185.5px);
 }
 .features{
@@ -154,9 +153,9 @@ h2,h3{
 .row>section{
 	width: 50%;
 	padding-top: 45px;
+	padding-bottom: 45px;
 	box-sizing: border-box;
 	position: relative;
-	height: 420px;
 	background: white;
 	color: black;
 }
@@ -194,12 +193,8 @@ h2,h3{
 	margin-left: 5px;
     margin-top: 29px;
 }
-.news .button, 
-.gallery-navigation{
-	position: absolute;
-	bottom: 51px;
-}
 .gallery-button{
+	margin-top: 30px;
 	margin-right: 15px;
 	text-transform: uppercase;
 }
